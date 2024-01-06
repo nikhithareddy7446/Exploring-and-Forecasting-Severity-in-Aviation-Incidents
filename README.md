@@ -58,7 +58,8 @@ To make sure the model can adjust to new inputs, its learned knowledge is assess
 
 **3.4 Flowchart**
 
-![](RackMultipart20240106-1-mrc8ck_html_8e89effe8decefa2.png)
+<img width="355" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/7caec564-d712-4006-a8f9-2a8bff2bf0f5">
+
 
 **Fig.1** : Waterfall Model - Flowchart
 
@@ -74,7 +75,7 @@ Every data item is plotted with its associated value. Classification is carried 
 
 Weak classifiers should be converted into strong classifiers, hence boosting came into picture in machine learning. Weak classifiers are always beneficial than random guesses. As a result, these classifiers prove to be robust and solve the problem of overfitting when applied on large datasets. Hence, the weak ones provide efficient results rather than random values. A single feature is focused upon which has any random kind of threshold applied on it. If the feature is above the threshold than predicted, it belongs to positive otherwise belongs to negative. AdaBoost stands for 'Adaptive Boosting' which transforms weak learners or predictors to strong predictors in order to solve the problem of classification. For classification, below is the final equation:
 
-![](RackMultipart20240106-1-mrc8ck_html_870861aad823bb75.png)
+<img width="309" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/e0d55d5b-3232-4508-a2c5-8a13aea995af">
 
 Here **ht** designates the classifier **t** th weak and t represents its corresponding weight.
 
@@ -86,13 +87,13 @@ Every tree in the random forest is built using randomly sampled random vectors t
 
 In our scenario, random forest classifiers are used to categorize the seriousness of airplane accidents. To account for the relative importance or influence of each function in the estimate process, Scikit-Learn incorporates an additional model variable. It determines each feature's score automatically throughout the training phase. Thus, until all scores add up to one, relevance is decreased. In order to develop the model, this score aids in identifying the crucial components and eliminating the less important ones. The following is the formula for determining a decision tree's entropy:
 
-![](RackMultipart20240106-1-mrc8ck_html_5040f1894d525169.png)
+<img width="473" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/33a4dace-aabb-41ac-a0e5-f8c669749f4f">
 
 **4.4 Logistic Regression:**
 
 Machine learning approach for binary classification is called logistic regression. It is an easy-to-implement, straightforward method that can serve as a performance benchmark. It is based on data statistics, just as a lot of other machine learning methods. Moreover, despite its name, it is not a collection of guidelines for regression issues where we wish to anticipate an endless outcome. For binary classification, logistic regression is the preferred method. The outcome is a discrete binary between 0 and 1. By utilizing its built-in logistic property to estimate probabilities, logistic regression analyzes the relationship between dependent variables and one or more independent variables.
 
-![](RackMultipart20240106-1-mrc8ck_html_79f665210925bae5.png)
+<img width="241" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/368ba56f-4c6f-4693-a071-67002de6d645">
 
 **4.5 Decision Tree classifier:**
 
@@ -100,11 +101,11 @@ Decision tree methodology is a commonly used data mining method for establishing
 
 Decision trees are built using a heuristic called recursive partitioning. After the root node, every node is divided into several nodes. The main concept is to divide the data space into dense and sparse regions using a decision tree. Binary or multiway splitting of a binary tree is possible. The tree is kept splitting by the algorithm until the data is somewhat homogeneous. Upon completion of training, an optimal categorized prediction can be made using the decision tree that is returned. The randomness of the dataset will increase with entropy. It is desirable to have a lower entropy while creating a decision tree [8]. The following is the formula for determining a decision tree's entropy:
 
-![](RackMultipart20240106-1-mrc8ck_html_87e737a394c57c2b.png)
+<img width="284" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/cd323cf2-a1db-4410-bcef-1c30aed25a21">
 
 This metric can further be used to determine the root node of the decision tree and the number of splits to be made. The root node of a decision tree is often referred to as the decision node or the master node.
 
-![](RackMultipart20240106-1-mrc8ck_html_2bdc62491589abf2.png)
+<img width="401" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/a14359e6-b4f0-48e8-8f25-706c00ac5c17">
 
 **Fig.2** : Decision Tree Model
 
@@ -114,7 +115,7 @@ As the number of splits increases in a decision tree, the time required to build
 
 Ensemble techniques are widely used in machine learning to improve model performance by combining predictions from multiple base models. Voting ensemble is a popular method in the realm of ensemble techniques that leverages the wisdom of the crowd by aggregating the outputs of individual models. In machine learning, ensemble techniques combine predictions from multiple base models to boost model performance more than what a single model could achieve. The underlying idea is that different models may capture diverse patterns or biases in the data, and by aggregating their predictions, the ensemble model can compensate for individual model weaknesses and produce better overall performance [8]. Ensembles often achieve higher accuracy than individual models, particularly when the individual models have complementary strengths. Moreover, they are more robust to noise and outliers in the data, as errors made by individual models are often compensated by others.
 
-![](RackMultipart20240106-1-mrc8ck_html_ff477490e61573ca.png)
+<img width="322" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/d5aff59c-b161-4e34-8fbd-265b36d9f2e6">
 
 **Fig.3** : Voting Ensemble Model
 
@@ -122,7 +123,7 @@ Ensemble techniques are widely used in machine learning to improve model perform
 
 Companies produce their records for each airplane and hence, these records are collected to form a dataset wherein details about every airplane module are stored hence, a huge dataset comprising thousands of records is formed. Such datasets are loaded with a large amount of attributes. Numerous attributes are required in order to justify the airplane incident. Hence, the data in these attributes is unstructured and textual [9]. The dataset has to be brought and cut down in such a manner where the classification algorithms can be performed. The attributes that define the output of the prediction are the target attributes. The target variables depend upon the safety of the airplane.
 
-![](RackMultipart20240106-1-mrc8ck_html_28b3cbd013903ce4.png)
+<img width="281" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/e21fad01-758c-4d6a-80c3-1e344e911bd5">
 
 **Fig.4** : Data Collection and Analysis
 
@@ -141,13 +142,13 @@ Classification algorithms carry out the process of data analysis. Since accuracy
 | Ada Boost | 87.99% |
 | Voting Ensemble | 87.45% |
 
-![](RackMultipart20240106-1-mrc8ck_html_115683732188265f.png)
+<img width="481" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/c0499613-2bd1-415b-8536-5ae5e96fb7e1">
 
 **Fig.6** : shows the accuracy of all the algorithms discussed.
 
 The accuracy (in percentage) of each algorithm is displayed in Table 1. Conversely, the Decision Tree classifier has an astounding 88% accuracy rate, which can be attributed to a number of significant characteristics that the algorithm highlights.
 
-![](RackMultipart20240106-1-mrc8ck_html_a430e269f6c4ce6.png)
+<img width="502" alt="image" src="https://github.com/nikhithareddy7446/Exploring-and-Forecasting-Severity-in-Aviation-Incidents/assets/142128157/06fe10fc-e5c8-44b1-9e6b-3b45087caaf5">
 
 **Fig.7** : shows the ROC Curve
 
